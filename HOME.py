@@ -68,7 +68,7 @@ def main():
         st.markdown(f'<a href="{"https://www.youtube.com/@CanalUSP"}"><img src="{"https://yt3.googleusercontent.com/hwpjVSGYUvTWn6wtXJ_75BWdwG_Z_erSU-gM3XfsqzzHI51QPnKErtC5iJEshXc86T7nNTh5tq0=s160-c-k-c0x00ffffff-no-rj"}" width="200"></a>', unsafe_allow_html=True)
         st.subheader("videos recomendados")
         playlist = [
-        {"titulo": "Vídeo 1", "link": "https://www.youtube.com/watch?v=WgHUHPlJETs&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx"},
+        {"titulo": "INTRODUÇÃO ÀS FUNÇÕES COM DUAS VARIÁVEIS 1", "link": "https://www.youtube.com/watch?v=jjFYS51D4WE"},
         {"titulo": "Lady Gaga - Bad Romance (Official Music Video)", "link": "https://www.youtube.com/watch?v=qrO4YZeyl0I"},
         {"titulo": "Aula 01 Cálculo II - Funções de Várias Variáveis", "link": "https://www.youtube.com/watch?v=LmmPho49tDc&list=PLrOyM49ctTx9EGYGvXS6KVA9aoB3P4lJD"}
     ]
