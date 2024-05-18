@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import sqlite3
 
-def exibir_videos_youtube(playlist, termo_busca):
+def exibir_videos_youtube(videos, termo_busca):
     st.write("Vídeos:")
     for video in videos:
         if termo_busca.lower() in video['titulo'].lower():
