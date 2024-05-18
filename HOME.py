@@ -2,9 +2,9 @@ import os
 import streamlit as st
 import sqlite3
 
-def exibir_playlist_youtube(playlist, termo_busca):
+def exibir_videos_youtube(playlist, termo_busca):
     st.write("Vídeos:")
-    for video in playlist:
+    for video in videos:
         if termo_busca.lower() in video['titulo'].lower():
             #st.markdown(f"[{video['titulo']}]({video['link']})")
             st.video(video['link'])
@@ -62,7 +62,7 @@ def login(username, password):
 
 def main():
     #st.title(f"Bem-vindo, {username}!")
-    tab1, tab2, tab3 = st.tabs(["Inicio", "Créditos", "Monitoria(em breve)"])
+    tab1, tab2 = st.tabs(["Inicio", "Créditos"])
 
     with tab1:
         st.subheader("canais recomendados")
@@ -76,12 +76,11 @@ def main():
         termo_busca = st.text_input("Digite o título do vídeo:")
         #exibir_playlist_youtube(playlist, termo_busca)
 
-        s1, s2, s3, s4, s5 = st.columns(5)
+        s1, s2, s3 = st.columns(3)
         with s1:
-            exibir_playlist_youtube(playlist, termo_busca)
+            exibir_videos_youtube(playlist, termo_busca)
             st.video("https://www.youtube.com/watch?v=WgHUHPlJETs&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx")
         with s2:
-            exibir_playlist_youtube(playlist, termo_busca)
             st.video("https://www.youtube.com/watch?v=nKua7iJK2WQ&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx&index=2")
 
 
