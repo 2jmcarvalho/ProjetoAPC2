@@ -3,7 +3,7 @@ import streamlit as st
 import sqlite3
 
 def exibir_playlist_youtube(playlist, termo_busca):
-    st.write("Playlist do YouTube:")
+    st.write("Vídeos:")
     for video in playlist:
         if termo_busca.lower() in video['titulo'].lower():
             #st.markdown(f"[{video['titulo']}]({video['link']})")
