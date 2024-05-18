@@ -70,7 +70,7 @@ def main():
         playlist = [
         {"titulo": "Vídeo 1", "link": "https://www.youtube.com/watch?v=WgHUHPlJETs&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx"},
         {"titulo": "Lady Gaga - Bad Romance (Official Music Video)", "link": "https://www.youtube.com/watch?v=qrO4YZeyl0I"},
-        {"titulo": "Vídeo 3", "link": "https://www.youtube.com/watch?v=WgHUHPlJETs&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx"}
+        {"titulo": "Aula 01 Cálculo II - Funções de Várias Variáveis", "link": "https://www.youtube.com/watch?v=LmmPho49tDc&list=PLrOyM49ctTx9EGYGvXS6KVA9aoB3P4lJD"}
     ]
         termo_busca = st.text_input("Digite o título do vídeo:")
         #exibir_playlist_youtube(playlist, termo_busca)
