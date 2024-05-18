@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 import sqlite3
-import streamlit_authenticator as stauth
 
 def exibir_playlist_youtube(playlist, termo_busca):
     st.write("Playlist do YouTube:")
