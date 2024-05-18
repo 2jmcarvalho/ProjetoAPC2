@@ -9,6 +9,7 @@ def exibir_videos_youtube(videos, termo_busca):
             #st.markdown(f"[{video['titulo']}]({video['link']})")
             st.video(video['link'])
             st.write(video['titulo'], justify='center')
+            st.markdown(f"<p style='text-align:center;'>{video['titulo']}</p>", unsafe_allow_html=True)
 
 
 
