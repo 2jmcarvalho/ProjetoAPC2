@@ -8,7 +8,7 @@ def exibir_videos_youtube(videos, termo_busca):
         if termo_busca.lower() in video['titulo'].lower():
             #st.markdown(f"[{video['titulo']}]({video['link']})")
             st.video(video['link'])
-            st.write(video['titulo'])
+            st.write(video['titulo'], text_align='center')
 
 
 
@@ -79,9 +79,8 @@ def main():
         s1, s2, s3 = st.columns(3)
         with s1:
             exibir_videos_youtube(videos, termo_busca)
-            st.video("https://www.youtube.com/watch?v=WgHUHPlJETs&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx")
         with s2:
-            st.video("https://www.youtube.com/watch?v=nKua7iJK2WQ&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx&index=2")
+            st.header("canais(em breve)")
 
 
     
