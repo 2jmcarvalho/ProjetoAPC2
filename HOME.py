@@ -8,6 +8,7 @@ def exibir_playlist_youtube(playlist, termo_busca):
         if termo_busca.lower() in video['titulo'].lower():
             #st.markdown(f"[{video['titulo']}]({video['link']})")
             st.video(video['link'])
+            st.write(video['titulo'])
 
 
 
