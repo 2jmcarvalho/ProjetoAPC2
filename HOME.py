@@ -72,7 +72,7 @@ def main():
         {"titulo": "INTRODUÇÃO ÀS FUNÇÕES COM DUAS VARIÁVEIS 1", "link": "https://www.youtube.com/watch?v=jjFYS51D4WE"},
         {"titulo": "Lady Gaga - Bad Romance (Official Music Video)", "link": "https://www.youtube.com/watch?v=qrO4YZeyl0I"},
         {"titulo": "Aula 01 Cálculo II - Funções de Várias Variáveis", "link": "https://www.youtube.com/watch?v=LmmPho49tDc&list=PLrOyM49ctTx9EGYGvXS6KVA9aoB3P4lJD"},
-        {"tirulo": "teste", "link": "https://www.youtube.com/watch?v=MB3VkzPdgLA"}
+        #{"tirulo": "teste", "link": "https://www.youtube.com/watch?v=MB3VkzPdgLA"}
     ]
         termo_busca = st.text_input("Digite o título do vídeo:")
         #exibir_playlist_youtube(playlist, termo_busca)
