@@ -69,7 +69,7 @@ def main():
         st.subheader("videos recomendados")
         playlist = [
         {"titulo": "Vídeo 1", "link": "https://www.youtube.com/watch?v=WgHUHPlJETs&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx"},
-        {"titulo": "Vídeo gaga", "link": "https://www.youtube.com/watch?v=qrO4YZeyl0I"},
+        {"titulo": "Lady Gaga - Bad Romance (Official Music Video)", "link": "https://www.youtube.com/watch?v=qrO4YZeyl0I"},
         {"titulo": "Vídeo 3", "link": "https://www.youtube.com/watch?v=WgHUHPlJETs&list=PLAudUnJeNg4tr-aiNyYCXE46L3qEZ2Nzx"}
     ]
         termo_busca = st.text_input("Digite o título do vídeo:")
