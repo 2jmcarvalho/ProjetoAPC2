@@ -17,7 +17,7 @@ def exibir_videos_youtube(videos, termo_busca):
     
     
 
-st.set_page_config(layout="wide", page_title="Guia do Universitario", page_icon="🤓")
+#st.set_page_config(layout="wide", page_title="Guia do Universitario", page_icon="🤓")
 st.title("Guia do Universitario")
 
 def register(username, password):
@@ -61,6 +61,14 @@ def login(username, password):
 
 
 def main():
+
+    st.set_page_config(
+        page_title="Meu Site Azul",
+        page_icon=":blue_circle:",
+        layout="wide",
+        initial_sidebar_state="expanded",
+        theme="blue"
+    )
     #st.title(f"Bem-vindo, {username}!")
     tab1, tab2 = st.tabs(["Inicio", "Créditos"])
 
