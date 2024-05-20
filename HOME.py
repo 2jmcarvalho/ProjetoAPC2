@@ -61,29 +61,6 @@ def login(username, password):
 
 
 def main():
-
-        st.markdown(
-        """
-        <style>
-        .reportview-container {
-            background: #f5f5f5;
-        }
-        .sidebar .sidebar-content {
-            background: #3498db;
-            color: #ffffff;
-        }
-        .Widget>label {
-            color: #ffffff;
-        }
-        .stButton>button {
-            background-color: #3498db;
-            color: #ffffff;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-    
     #st.title(f"Bem-vindo, {username}!")
     tab1, tab2 = st.tabs(["Inicio", "Créditos"])
 
