@@ -4,12 +4,20 @@ import sqlite3
 
 def exibir_videos_youtube(videos, termo_busca):
     st.write("Vídeos:")
+    
     for video in videos:
         if termo_busca.lower() in video['titulo'].lower():
             #st.markdown(f"[{video['titulo']}]({video['link']})")
             st.video(video['link'])
             st.markdown(f"<p style='text-align:center;'>{video['titulo']}</p>", unsafe_allow_html=True)
 
+def exibir_canais_youtube(canais, termo_busca):
+    st.write("Canais:")
+    for canal in canais:
+        if termo_busca.lower() in canal['titulo'].lower():
+            #st.markdown(f"[{video['titulo']}]({video['link']})")
+            st.markdown(f'<a href="{canal['link']}"><img src="{canal['imagem']}" width="200"></a>', unsafe_allow_html=True)
+            st.markdown(f"<p style='text-align:;'>{canal['titulo']}</p>", unsafe_allow_html=True)
 
 
 
@@ -62,26 +70,30 @@ def login(username, password):
 
 def main():
     #st.title(f"Bem-vindo, {username}!")
-    tab1, tab2 = st.tabs(["Inicio", "Créditos"])
+    tab1, tab2 = st.tabs(["Inicio", "Monitoria(em breve)"])
 
     with tab1:
-        st.subheader("canais recomendados")
-        st.markdown(f'<a href="{"https://www.youtube.com/@CanalUSP"}"><img src="{"https://yt3.googleusercontent.com/hwpjVSGYUvTWn6wtXJ_75BWdwG_Z_erSU-gM3XfsqzzHI51QPnKErtC5iJEshXc86T7nNTh5tq0=s160-c-k-c0x00ffffff-no-rj"}" width="200"></a>', unsafe_allow_html=True)
-        st.subheader("videos recomendados")
+
+
+        
         videos = [
         {"titulo": "INTRODUÇÃO ÀS FUNÇÕES COM DUAS VARIÁVEIS 1", "link": "https://www.youtube.com/watch?v=jjFYS51D4WE"},
         {"titulo": "Lady Gaga - Bad Romance (Official Music Video)", "link": "https://www.youtube.com/watch?v=qrO4YZeyl0I"},
         {"titulo": "Aula 01 Cálculo II - Funções de Várias Variáveis", "link": "https://www.youtube.com/watch?v=LmmPho49tDc&list=PLrOyM49ctTx9EGYGvXS6KVA9aoB3P4lJD"},
         {"titulo": "Billie Eilish - LUNCH (Official Music Video)", "link": "https://www.youtube.com/watch?v=MB3VkzPdgLA"},
     ]
+        canais = [
+        {"titulo": "Canal 1", "link": "https://www.youtube.com/@HelpEngenharia" , "imagem": "https://yt3.googleusercontent.com/68JRWeh5ZsvALQXATU2eeeYmIHRLpYnWChBcVc8AWlpi_Xsm_kaJfcRTlnE8-33cGUBj753cbLQ=s160-c-k-c0x00ffffff-no-rj"},
+        
+    ]
         termo_busca = st.text_input("Digite o título do vídeo:")
         #exibir_playlist_youtube(playlist, termo_busca)
 
-        s1, s2, s3 = st.columns(3)
+        s1, s2 = st.columns([3,1])
         with s1:
             exibir_videos_youtube(videos, termo_busca)
         with s2:
-            st.header("canais(em breve)")
+            exibir_canais_youtube(canais, termo_busca)
 
 
     
