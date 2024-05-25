@@ -16,7 +16,7 @@ def exibir_canais_youtube(canais, termo_busca):
     for canal in canais:
         if termo_busca.lower() in canal['titulo'].lower():
             #st.markdown(f"[{video['titulo']}]({video['link']})")
-            st.markdown(f'<a href="{canal['link']}"><img src="{canal['imagem']}" width="200"></a>', unsafe_allow_html=True)
+            st.markdown(f'<a href="{canal["link"]}"><img src="{canal["imagem"]}" width="200"></a>', unsafe_allow_html=True)
             st.markdown(f"<p style='text-align:;'>{canal['titulo']}</p>", unsafe_allow_html=True)
 
 
